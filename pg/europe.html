@@ -5,12 +5,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 
-	<link rel="stylesheet" href="css/pushy.css">
-	<link rel="stylesheet" href="css/material-scrolltop.css">
+	<link rel="stylesheet" href="/css/pushy.css">
+	<link rel="stylesheet" href="/css/material-scrolltop.css">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="/js/jquery-3.2.1.min.js"></script>
 
 	<title>kae: wentToEurope</title>
 </head>
@@ -36,9 +36,9 @@
 						<!-- assign: 2 europe submenu -->
 						<button>Went to Europe</button>
 						<ul>
-							<li class="pushy-link"><a href="#france">1. Paris, France</a></li>
-							<li class="pushy-link"><a href="#italy">2. Rome, Italy</a></li>
-							<li class="pushy-link"><a href="#spain">3. Barcelona, Spain</a></li>
+							<li class="pushy-link"><a href="#france">Paris, France</a></li>
+							<li class="pushy-link"><a href="#italy">Rome, Italy</a></li>
+							<li class="pushy-link"><a href="#spain">Barcelona, Spain</a></li>
 						</ul>
 					</li>
 					<li class="pushy=link"><a href="http://validator.w3.org/check?uri=referer">Referer Link</a></li>
@@ -51,20 +51,21 @@
 
 		<!-- container -->
 		<div id="container">
-			<button class="menu-btn">&#9776; Menu</button>
-			
+			<button class="menu-btn" class="clear">&#9776; Menu</button>
+
 			<!-- banner -->
 			<header id="top">
 				<h1><span id="name">Kae</span> went to europe</h1>
 			</header>
-			
-			<!-- summary -->
-			<section>
-				<h3>Europe vacation</h3>
-				<p>Since I'm considered a full-time student I don't get to go on many vacations with my family because of school semesters. I'm usually the one house-sitting while my parents and my brother go galavanting off into the distance but last year I took Summer semester off to go on a month-long trip to Europe with my family. My parents had booked a cruise that took us from Rome to different areas in the Mediterranean so to make it a big vacation we added 2-3 more weeks of sight seeing on our itinerary.</p>
-			</section>
 
 			<main>
+				<!-- summary -->
+				<section>
+					<h3>Europe vacation</h3>
+					<p>Since I'm considered a full-time student I don't get to go on many vacations with my family because of school semesters. I'm usually the one house-sitting while my parents and my brother go galavanting off into the distance but last year I took Summer semester off to go on a month-long trip to Europe with my family. My parents had booked a cruise that took us from Rome to different areas in the Mediterranean so to make it a big vacation we added 2-3 more weeks of sight seeing on our itinerary.</p>
+				</section>
+
+
 				<!-- content-->
 				<section>
 					<article id="france">
@@ -75,7 +76,7 @@
 
 						<p>As for the Eiffel Tower it was gorgeous up top. At the base there are a lot of street vendors and peddlers selling trinkets so mind your bag and pockets. Once you pay for your admission there's a little elevator that takes you up to the tower to the observation deck. There's a little shop that sells champagne if you feel like celebrating!</p>
 						<figure>
-							<img src="img/france.jpg">
+							<img src="/img/france.jpg">
 							<figcaption>(The Eiffel Tower lit up at night)</figcaption>
 						</figure>
 					</article>
@@ -88,7 +89,7 @@
 
 						<p> As for the Trevi Fountain, it's much prettier at night because lights are installed to make the statues look really pretty. There are lots of people at night too but generally people take turns going up to the edge of the fountain to take pictures, toss in a coin, and shuffle away for the next party to take pictures.</p>
 						<figure>
-							<img src="img/rome.jpg">
+							<img src="/img/rome.jpg">
 							<figcaption>(The Colossuem lit up at night) </figcaption>
 						</figure>
 					</article>
@@ -97,25 +98,33 @@
 						<h3>Barcelona, Spain</h3>
 						<p>One of our last stops in the trip was Barcelona. We were on a cruise at the time and this was one of the day stops. Our main stop was Sagrada Familia. A church that is still undergoing construction to this day -- in fact I don't think it's planned to be completed until sometime during the 2020's. Unfortunately, we never made it inside, turns out you had to book a time to enter the church. But we did manage to take some photos outside and ademire the stunning architecture. </p>
 						<figure>
-							<img src="img/barcelona.jpg">
+							<img src="/img/barcelona.jpg">
 							<figcaption>(The front of Sagrada Familia during the day.)</figcaption>
 						</figure>
 					</article>
 				</section>
-				
-				<!-- new HTML 5 content .. -->
-				<section>
-					<h3>New HTML 5 Content</h3>
-					<p></p>
-				</section>
 			</main>
+			<!-- new HTML 5 content .. -->
+			<section class="sidebar">
+				<h3>New HTML 5 Content</h3>
+				<aside>
+					<h4>Setting Viewport</h4>
+					<p>I thought this was interesting but there's a new meta tag which gives the browser instructions on the page dimensions and scaling which will depend whether the user opened your webpage on their computer, tablet, or a mobile device. </p>
+
+					<h5>Tag Attributes</h5>
+					<ul>
+						<li><span class="code">name = "viewport" </span>: </li>
+						<li><span class="code">content = "width=device-width, initial-scale=1.0"</span></li>
+					</ul>
+				</aside>
+			</section>
 		</div>
 	</div>
 	<!-- material-scrolltop button -->
 	<button class="material-scrolltop" type="button"></button>
 
-	<script src="js/pushy.min.js"></script>
-	<script src="js/material-scrolltop.js"></script>
+	<script src="/js/pushy.min.js"></script>
+	<script src="/js/material-scrolltop.js"></script>
 	<!-- Initialize material-scrolltop with (minimal) -->
 	<script>
 		$('body').materialScrollTop();
