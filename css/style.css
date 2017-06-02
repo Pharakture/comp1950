@@ -1,0 +1,207 @@
+/* Stylesheet by Kae Ramirez A00923169 */
+
+/* ID */
+#name {
+	color: #e5452c;
+	letter-spacing: 0.05em
+}
+
+/* By TAG */
+img {
+	max-width: 75%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+body {
+	background-color: #D5D5D5;
+	font-family: sans-serif;
+	color: #272625;
+	text-align: left;
+	padding: auto;
+	letter-spacing: 0.03em;
+}
+
+
+h1 {
+	margin-top: 0.25em;
+	margin-bottom: 0;
+	text-transform: lowercase;
+	font-size: 6em;
+	padding: auto 80%;
+	font-family: serif;
+}
+
+h3 {
+	margin-top: 0.50em;
+	margin-bottom: 0.50em;
+	text-transform: uppercase;
+	font-size: 4em;
+	padding: auto 80%;
+	border-top: 6px solid #272625;
+	border-bottom: 6px solid #272625; 
+	border-color: faf3e6;
+	color: #e5452c;
+}
+
+p {
+	margin-top: 0.50em;
+	margin-bottom: 0.50em;
+	text-align: left;
+}
+
+a {
+	font-size: 1.05em;
+	color: #e5452c;
+	display: inline-block;
+	text-align: center;
+	padding: 0.2rem 0.2rem;
+	text-decoration: none;
+	margin: auto;
+  	letter-spacing: 0.02em;
+}
+
+a:hover, a:focus {
+	background-color: #e5452c;
+	color: #faf3e6;
+}
+
+
+li {
+	text-align: left;
+}
+
+section {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+figcaption {
+	padding-top: 0.10em;
+	text-align: center;
+	font-family: serif;
+	font-size: 1em;
+	font-style: italic;
+	color: #888e96;
+	
+}
+
+article h3 {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	text-transform: uppercase;
+	font-size: 4em;
+	padding: auto 80%;
+	border-top: 6px solid #272625;
+	border-bottom: 6px solid #272625; 
+	border-color: faf3e6;
+	color: #e5452c;
+}
+
+
+/* by CLASS */
+
+.page-wrapper {
+	margin: 10%;
+	padding: 0px auto;
+}
+
+.caption {
+	font-style: italic;
+	text-align: center;
+	font-family: serif;
+	font-size: 0.90em;
+}
+
+.menu-btn {
+	width: 10em;
+	padding: 0.50em;
+	background-color: #272625;
+	color: #faf3e6;
+	font-family: sans-serif;
+	font-size: 125%;
+	letter-spacing: 0.05em;
+}
+
+.menu-btn:hover, .menu-btn:focus {
+	background-color: #e5452c;
+	color: #faf3e6;
+}
+
+/* no longer in use while pushy is active
+
+.mainnav ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-color: #272625;
+	overflow: hidden;
+	font-size: 1.15em;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+.mainnav li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	float: center;
+}
+
+.mainnav li a {
+	font-weight: bold;
+	background-color: #272625;
+	color: #faf3e6;
+	display: inline-block;
+	text-align: center;
+	padding: 0.15rem 0.5rem;
+	text-decoration: none;
+	margin: auto;
+  	letter-spacing: 0.05em;
+}
+
+.mainnav li a:hover, a:focus {
+	background-color: #e5452c;
+	color: #272625;
+}
+
+footer{
+	text-decoration: none;
+	text-align: center;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+	font-size: 1.15em;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+footer li {
+	padding: 0.15rem 0.5rem;
+}
+
+footer li a {
+	background-color: #272625;
+	color: #faf3e6;
+	display: block;
+	text-align: center;
+	padding: 0.15rem 0.5rem;
+	text-decoration: none;
+	margin: auto;
+  	letter-spacing: 0.05em;
+}
+
+footer li a:hover, a:focus {
+	background-color: #e5452c;
+	color: #272625;
+}
+
+
+*/
