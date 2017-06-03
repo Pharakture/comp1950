@@ -12,6 +12,10 @@
 
 	<script src="/js/jquery-3.2.1.min.js"></script>
 
+	<!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+
 	<title>kae: wentToEurope</title>
 </head>
 
@@ -109,13 +113,47 @@
 				<h3>New HTML 5 Content</h3>
 				<aside>
 					<h4>Setting Viewport</h4>
-					<p>I thought this was interesting but there's a new meta tag which gives the browser instructions on the page dimensions and scaling which will depend whether the user opened your webpage on their computer, tablet, or a mobile device. </p>
+					<p>I thought this was interesting but there's a new meta tag which gives the browser instructions on the page dimensions and scaling which will depend whether the user opened your webpage on their computer, tablet, or a mobile device.</p>
 
 					<h5>Tag Attributes</h5>
 					<ul>
-						<li><span class="code">name = "viewport" </span>: </li>
-						<li><span class="code">content = "width=device-width, initial-scale=1.0"</span></li>
+						<li><span class="code">name="viewport" </span>: what the user can see in the webpage</li>
+						<li><span class="code">content="width=device-width, initial-scale=1.0"</span>: sets the page width to the device width and the scale is whether you want the user zoomed in or not</li>
 					</ul>
+
+					<h5>Browser Compatibility</h5>
+					<ul>
+						<li>IE11: partial support</li>
+						<li>Edge: partial support</li>
+						<li>Firefox: supported</li>
+						<li>Chrome: supported</li>
+						<li>Safari: supported</li>
+						<li>Opera: supported</li>
+					</ul>
+				</aside>
+
+				<aside>
+					<h4>Progress Bar</h4>
+					<p>This is sooo cool. I think adding a progress bar feature is a great idea for fund-type websites because visual representations are easier for people to understand. You can also style it using CSS.</p>
+
+					<h5>Tag Attributes</h5>
+					<ul>
+						<li><span class="code">max="2"</span>: a number which represents the total amount of work</li>
+						<li><span class="code">value="1"</span>: a number which represents the how much of the task is complete</li>
+					</ul>
+
+					<h5>Browser Compatibility</h5>
+					<ul>
+						<li>IE11: supported</li>
+						<li>Edge: supported</li>
+						<li>Firefox: supported</li>
+						<li>Chrome: supported</li>
+						<li>Safari: supported, partial on iOS</li>
+						<li>Opera: supported</li>
+					</ul>
+
+					<span>Testing out the progress bar tag.</span>
+					<progress value="70" max="100"></progress>
 				</aside>
 			</section>
 		</div>
@@ -129,7 +167,6 @@
 	<script>
 		$('body').materialScrollTop();
 	</script>
-
 </body>
 
 </html>

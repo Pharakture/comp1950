@@ -118,6 +118,13 @@ section {
 	font-size: 0.90em;
 }
 
+.code {
+	font-family: monospace;
+	color: blue;
+	font-size: 110%;
+	padding-right: 0.5em;
+}
+
 .clear {
 	float: none;
 	clear: both;
@@ -152,11 +159,15 @@ section {
 }
 
 .sidebar h3 {
-	color: #e88d7f;
+	color: #f77f6c;
 	font-size: 2em;
 	border-top: 6px solid #c4c4c4;
 	border-bottom: 6px solid #c4c4c4; 
-	border-color: faf3e6;
+	border-color: #efefef;
+}
+
+.sidebar h4 {
+	text-transform: uppercase;
 }
 
 
