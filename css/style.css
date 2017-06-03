@@ -1,17 +1,39 @@
 /* Stylesheet by Kae Ramirez A00923169 */
 
-/* ID */
+/* ------ ID asc ------ */
 #name {
 	color: #e5452c;
 	letter-spacing: 0.05em
 }
 
-/* By TAG */
-img {
-	max-width: 75%;
-	height: auto;
-	display: block;
+/* ------ TAG asc ----- */
+
+a {
+	font-size: 1.05em;
+	color: #e5452c;
+	display: inline-block;
+	text-align: center;
+	padding: 0.2rem 0.2rem;
+	text-decoration: none;
 	margin: auto;
+  	letter-spacing: 0.02em;
+}
+
+a:hover, a:focus {
+	background-color: #e5452c;
+	color: #faf3e6;
+}
+
+article h3 {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	text-transform: uppercase;
+	font-size: 4em;
+	padding: auto 80%;
+	border-top: 6px solid #272625;
+	border-bottom: 6px solid #272625; 
+	border-color: faf3e6;
+	color: #e5452c;
 }
 
 body {
@@ -23,6 +45,14 @@ body {
 	letter-spacing: 0.03em;
 }
 
+figcaption {
+	padding-top: 0.10em;
+	text-align: center;
+	font-family: serif;
+	font-size: 1em;
+	font-style: italic;
+	color: #888e96;
+}
 
 h1 {
 	margin-top: 0.25em;
@@ -45,30 +75,30 @@ h3 {
 	color: #e5452c;
 }
 
-p {
-	margin-top: 0.50em;
-	margin-bottom: 0.50em;
+
+img {
+	max-width: 75%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+li {
 	text-align: left;
 }
 
-a {
-	font-size: 1.05em;
-	color: #e5452c;
-	display: inline-block;
-	text-align: center;
-	padding: 0.2rem 0.2rem;
-	text-decoration: none;
-	margin: auto;
-  	letter-spacing: 0.02em;
+
+main {
+	float: left;
+	position: relative;
+	width: 80%;
+	clear: none;
+	margin-bottom: 2em;
 }
 
-a:hover, a:focus {
-	background-color: #e5452c;
-	color: #faf3e6;
-}
-
-
-li {
+p {
+	margin-top: 0.50em;
+	margin-bottom: 0.50em;
 	text-align: left;
 }
 
@@ -77,41 +107,28 @@ section {
 	padding-bottom: 1em;
 }
 
-figcaption {
-	padding-top: 0.10em;
-	text-align: center;
-	font-family: serif;
-	font-size: 1em;
-	font-style: italic;
-	color: #888e96;
-	
-}
 
-article h3 {
-	margin-top: 0.75em;
-	margin-bottom: 0.75em;
-	text-transform: uppercase;
-	font-size: 4em;
-	padding: auto 80%;
-	border-top: 6px solid #272625;
-	border-bottom: 6px solid #272625; 
-	border-color: faf3e6;
-	color: #e5452c;
-}
+/* ----- CLASS asc ------ */
 
-
-/* by CLASS */
-
-.page-wrapper {
-	margin: 10%;
-	padding: 0px auto;
-}
 
 .caption {
 	font-style: italic;
 	text-align: center;
 	font-family: serif;
 	font-size: 0.90em;
+}
+
+.code {
+	font-family: monospace;
+	color: blue;
+	font-size: 110%;
+	padding-right: 0.5em;
+}
+
+.clear {
+	float: none;
+	clear: both;
+	display: block;
 }
 
 .menu-btn {
@@ -128,6 +145,31 @@ article h3 {
 	background-color: #e5452c;
 	color: #faf3e6;
 }
+
+.page-wrapper {
+	margin: 10%;
+	padding: 0px auto;
+}
+
+.sidebar {
+	padding-left: .5em;
+	float: right;
+	border-left: 3px solid #c4c4c4;
+	width: 15%;
+}
+
+.sidebar h3 {
+	color: #f77f6c;
+	font-size: 2em;
+	border-top: 6px solid #c4c4c4;
+	border-bottom: 6px solid #c4c4c4; 
+	border-color: #efefef;
+}
+
+.sidebar h4 {
+	text-transform: uppercase;
+}
+
 
 /* no longer in use while pushy is active
 
