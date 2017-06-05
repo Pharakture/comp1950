@@ -97,11 +97,6 @@ img {
 	margin: auto;
 }
 
-li {
-	text-align: left;
-}
-
-
 main {
 	float: left;
 	position: relative;
@@ -124,14 +119,6 @@ section {
 
 /* ----- CLASS asc ------ */
 
-
-.caption {
-	font-style: italic;
-	text-align: center;
-	font-family: serif;
-	font-size: 0.90em;
-}
-
 .code {
 	font-family: monospace;
 	color: blue;
@@ -150,7 +137,6 @@ section {
 	padding: 0.50em;
 	background-color: #272625;
 	color: #faf3e6;
-	font-family: sans-serif;
 	font-size: 125%;
 	letter-spacing: 0.05em;
 }
