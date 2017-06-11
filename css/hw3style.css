@@ -1,0 +1,50 @@
+body {
+	font-family: sans-serif;
+}
+
+nav {
+	overflow: hidden;
+	float: left;
+	position: relative;
+	display: block;
+}
+
+nav:hover .dropcontent {
+	display: block;
+}
+
+nav:hover .dropbtn {
+	background-color: dodgerblue;
+}
+
+nav a {
+	background-color: #333;
+	color: white;
+	display: block;
+	padding: 1em;
+}
+
+.dropbtn {
+	background-color: #333;
+	color: white;
+	padding: 1em;
+	font-size: 100%;
+}
+
+.dropcontent {
+	display: none;
+	position: absolute;
+	background-color: #333;
+}
+
+.dropcontent a {
+	background-color: #333;
+	color: white;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdowncontent a:hover {
+	background-color: #f1f1f1
+}
+
