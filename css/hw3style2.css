@@ -15,7 +15,12 @@ footer {
 }
 
 main {
-	float: none;
+	float: left;
+	width: 60%;
+}
+
+main section {
+	padding: 1em;
 }
 
 nav {
@@ -83,7 +88,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .wrapper {
 	background-color: whitesmoke;
-	width: 50%;
+	width: 75%;
 	margin: auto;
 }
 
@@ -93,11 +98,19 @@ nav a:hover, .dropdown:hover .dropbtn {
 	background-color: lightblue;
 }
 
+#left section {
+	padding: 1em;
+}
+
 #right {
 	float: right;
 	width: 20%;
 	background-color: darkslategrey;
 	color: white;
+}
+
+#right section {
+	padding: 1em;
 }
 
 
