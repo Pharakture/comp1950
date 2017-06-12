@@ -2,7 +2,7 @@
 
 body {
 	font-family: sans-serif;
-	background-color: white;
+	background-color: #262626;
 	padding: auto;
 }
 
@@ -15,13 +15,20 @@ footer {
 }
 
 main {
-	float: none;
+	float: left;
+	width: 60%;
+}
+
+main section {
+	padding: 1em;
 }
 
 nav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #262626;
     font-family: sans-serif;
+	font-size: 150%;
+	border: 1px white solid;
 }
 
 nav a {
@@ -36,7 +43,6 @@ nav a {
 nav a:hover, .dropdown:hover .dropbtn {
     background-color: dodgerblue;
 }
-
 
 
 .dropdown {
@@ -83,7 +89,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .wrapper {
 	background-color: whitesmoke;
-	width: 50%;
+	width: 75%;
 	margin: auto;
 }
 
@@ -93,11 +99,19 @@ nav a:hover, .dropdown:hover .dropbtn {
 	background-color: lightblue;
 }
 
+#left section {
+	padding: 1em;
+}
+
 #right {
 	float: right;
 	width: 20%;
 	background-color: darkslategrey;
 	color: white;
+}
+
+#right section {
+	padding: 1em;
 }
 
 
@@ -116,26 +130,26 @@ nav a:hover, .dropdown:hover .dropbtn {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 0px 0px;
+	background: url("../../img/css_sprites.png") 0px 0px;
 }
 
 #icon2 {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 128px 0px;
+	background: url("../../img/css_sprites.png") 128px 0px;
 }
 
 #icon3 {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 256px 0px;
+	background: url("../../img/css_sprites.png") 256px 0px;
 }
 
 #icon4 {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 384px 0px;
+	background: url("../../img/css_sprites.png") 384px 0px;
 }

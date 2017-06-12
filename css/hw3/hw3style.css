@@ -4,6 +4,7 @@ body {
 	font-family: sans-serif;
 	background-color: white;
 	padding: auto;
+	font-size: 110%;
 }
 
 footer {
@@ -14,13 +15,18 @@ footer {
 	background-color: black;
 }
 
+h2 {
+	padding: 0.5em;
+	text-transform: uppercase;
+}
+
 main {
 	float: left;
-	width: 60%;
+	width: 75%;
 }
 
 main section {
-	padding: 1em;
+	padding: 0.5em;	
 }
 
 nav {
@@ -39,14 +45,11 @@ nav a {
 }
 
 nav a:hover, .dropdown:hover .dropbtn {
-    background-color: dodgerblue;
+    background-color: orangered;
 }
-
-
 
 .dropdown {
     float: left;
-    overflow: hidden;
 }
 
 .dropdown .dropbtn {
@@ -66,7 +69,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .drop-content a {
     float: none;
-    color: #333;
+    color: #262626;
     padding: 1em;
     text-decoration: none;
     display: block;
@@ -88,7 +91,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 .wrapper {
 	background-color: whitesmoke;
-	width: 75%;
+	width: 50%;
 	margin: auto;
 }
 
@@ -96,59 +99,37 @@ nav a:hover, .dropdown:hover .dropbtn {
 	float: left;
 	width: 20%;
 	background-color: lightblue;
+	border: 1px grey solid;
 }
 
 #left section {
-	padding: 1em;
+	padding: 0.5em;
 }
-
-#right {
-	float: right;
-	width: 20%;
-	background-color: darkslategrey;
-	color: white;
-}
-
-#right section {
-	padding: 1em;
-}
-
-
-#gototop a{
-	text-decoration: none;
-	color: white;
-}
-
-#gototop a:hover {
-	background-color: dodgerblue;
-}
-
-
 
 #icon1 {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 0px 0px;
+	background: url("../../img/css_sprites.png") 0px 0px;
 }
 
 #icon2 {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 128px 0px;
+	background: url("../../img/css_sprites.png") 128px 0px;
 }
 
 #icon3 {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 256px 0px;
+	background: url("../../img/css_sprites.png") 256px 0px;
 }
 
 #icon4 {
 	float: left;
 	width: 128px;
 	height: 128px;
-	background: url("../img/css_sprites.png") 384px 0px;
+	background: url("../../img/css_sprites.png") 384px 0px;
 }
