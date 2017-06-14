@@ -1,0 +1,60 @@
+@import url("normalize.css");
+
+/*--------- PRINT ------------- */
+@media print {
+	body {
+		background-color: white;
+		color: black;
+	}
+	main {
+		float: none;
+		width: 100%;
+		margin 0 0;
+		padding: 0 0;
+	}
+	nav {
+		display: none;
+	}
+	.sidebar {
+		float: none;
+		width: 100%;
+		margin 0 0;
+		padding: 0 0;
+	}
+}
+
+/*--------- SMALL DEVICES ------------- */
+@media screen and (min-width: 10px) and (max-width: 600px) {
+	main {
+		float: none;
+		width: 100%;
+		margin: 1em;
+	}
+	.sidebar {
+		float: none;
+		width: 100%;
+		margin: 1em;
+	}
+}
+
+/*--------- WIDESCREEN ------------- */
+@media screen and (min-width: 1024px) {
+	body {
+		background-color: #262626;
+		color: whitesmoke;
+	}
+	main {
+		float: left;
+		margin: auto 1em;
+		width: 70%;
+	}
+	.sidebar {
+		margin: auto;
+		padding: 0 auto;
+		float: left;
+		width: 25%;
+	}
+	footer {
+		clear: both;
+	}
+}
