@@ -3,8 +3,8 @@
 /*--------- PRINT ------------- */
 
 @media print {
-	a:link {
-		content: "(URL: " attr(href) ")";
+	a:link:after, a:visited:after {
+		content: " URL (" attr(href) ") ";
 		font-size: 75%;
 	}
 	body {
