@@ -1,10 +1,19 @@
 @import url("normalize.css");
 
 /*--------- PRINT ------------- */
+
 @media print {
+	a:link {
+		content: "(URL: " attr(href) ")";
+		font-size: 75%;
+	}
 	body {
 		background-color: white;
 		color: black;
+		font-family: serif;
+	}
+	img {
+		display: none;
 	}
 	main {
 		float: none;
@@ -23,38 +32,235 @@
 	}
 }
 
+
 /*--------- SMALL DEVICES ------------- */
+
 @media screen and (min-width: 10px) and (max-width: 600px) {
+	a {
+		text-decoration: none;
+		font-weight: bold;
+	}
+	body {
+		font-family: sans-serif;
+	}
+	header {
+		font-family: monospace;
+		font-weight: bold;
+		text-align: center;
+	}
 	main {
 		float: none;
-		width: 100%;
-		margin: 1em;
+		width: 80%;
+		margin: 0 auto;
+		padding: 1em;
+		background-color: #ddd;
+		-webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.75);
+		box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.75);
+	}
+	footer {
+		background-color: #262626;
+		color: white;
+	}
+	nav>ul {
+		background-color: #262626;
+		width: auto;
+		list-style: none;
+		margin: auto;
+		padding: auto;
+	}
+	nav>ul>li {
+		display: block background-color: white;
+		padding: 1em;
+	}
+	nav>ul>li>a {
+		text-decoration: none;
+		color: white;
+		font-family: sans-serif;
+	}
+	nav>ul>li>a:hover {
+		background-color: white;
+		color: dodgerblue;
+		font-weight: bold;
+		padding: 1em;
+	}
+	img {
+		width: 80%;
+		display: block;
+		margin: auto;
+		-webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.25);
+		box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.25);
+	}
+	section {
+		padding-bottom: 2em;
+		border-bottom: .5em solid grey;
+	}
+	.blurimage {
+		-webkit-filter: blur(4px);
+		filter: blur(4px);
+	}
+	.brightimage {
+		-webkit-filter: brightness(250%);
+		filter: brightness(250%);
+	}
+	.greyscaleimage {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	.boxes {
+		border-radius: 1em;
+		background: dodgerblue;
+		color: white;
+		padding: .5em;
+	}
+	.button {
+		background-color: dodgerblue;
+		border: none;
+		color: white;
+		padding: 1em;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.code {
+		font-family: monospace;
+		font-size: 125%;
+		color: blue;
+	}
+	.disabled {
+		opacity: 0.50;
+		cursor: not-allowed;
 	}
 	.sidebar {
 		float: none;
-		width: 100%;
-		margin: 1em;
+		border-top: 1em solid dodgerblue;
+		background-color: whitesmoke;
+		margin: 0 auto;
+		width: 80%;
+		padding: 1em;
+		-webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.75);
+		box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.75);
+	}
+	.warning {
+		background-color: white;
+		color: red;
+		font-family: monospace;
+		font-size: 125%;
 	}
 }
 
+
 /*--------- WIDESCREEN ------------- */
-@media screen and (min-width: 1024px) {
+
+@media screen and (min-width: 600px) {
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: dodgerblue;
+	}
 	body {
 		background-color: #262626;
 		color: whitesmoke;
+		font-family: sans-serif;
+	}
+	footer {
+		clear: both;
+	}
+	img {
+		width: 80%;
+		display: block;
+		margin: auto;
 	}
 	main {
 		float: left;
 		margin: auto 1em;
 		width: 70%;
 	}
-	.sidebar {
+	nav>ul {
+		background-color: whitesmoke;
+		width: auto;
+		list-style: none;
 		margin: auto;
-		padding: 0 auto;
+		padding: auto;
+	}
+	nav>ul>li {
+		display: block background-color: white;
+		padding: 1em;
+	}
+	nav>ul>li>a {
+		text-decoration: none;
+		color: #262626;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+	nav>ul>li>a:hover {
+		background-color: white;
+		color: dodgerblue;
+		font-weight: bold;
+		padding: 1em;
+	}
+	section {
+		padding-bottom: 2em;
+		border-bottom: .5em solid grey;
+	}
+	.boxes {
+		border-radius: 2em;
+		background: dodgerblue;
+		padding: 1em;
+	}
+	.button {
+		background-color: dodgerblue;
+		border: none;
+		color: white;
+		padding: 1em;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.blurimage {
+		-webkit-filter: blur(4px);
+		filter: blur(4px);
+	}
+	.brightimage {
+		-webkit-filter: brightness(250%);
+		filter: brightness(250%);
+	}
+	.greyscaleimage {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	.code {
+		font-family: monospace;
+		font-size: 125%;
+		color: blue;
+	}
+	.disabled {
+		opacity: 0.50;
+		cursor: not-allowed;
+	}
+	.sidebar {
+		margin: 1em auto;
+		padding-left: .5em;
+		padding-right: .5em;
 		float: left;
 		width: 25%;
+		border-left: .5em solid dodgerblue;
+		background-color: dimgrey;
+		color: white;
+		opacity: 0.80;
 	}
-	footer {
-		clear: both;
+	.sideboxes {
+		border-radius: 2em;
+		background: #262626;
+		color: white;
+		padding: 1em;
+	}
+	.warning {
+		background-color: white;
+		color: red;
+		font-family: monospace;
+		font-size: 125%;
 	}
 }
