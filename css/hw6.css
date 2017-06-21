@@ -1,0 +1,46 @@
+@import url(../css/pushy.css);
+@import url(../css/material-scrolltop.css);
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #e5452c;
+}
+
+a:hover {
+	background-color: #e5452c;
+	color: white;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #ddd;
+}
+
+header {
+	margin-top: 1em;
+	border-top: 1em solid #ddd;
+	border-bottom: 1em solid #ddd;
+}
+
+.menu-btn {
+	width: 10em;
+	padding: 0.50em;
+	background-color: #272625;
+	color: #faf3e6;
+	font-size: 125%;
+	letter-spacing: 0.05em;
+}
+
+.menu-btn:hover, .menu-btn:focus {
+	background-color: #e5452c;
+	color: #faf3e6;
+}
+
+#page-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background-color: whitesmoke;
+	padding: 2em;
+}
+

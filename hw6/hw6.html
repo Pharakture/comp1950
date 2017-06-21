@@ -5,40 +5,121 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="../css/foundation.css">
-	<link rel="stylesheet" href="../css/twentytwenty.css">
-
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/jquery.event.move.js"></script>
 	<script src="../js/jquery.twentytwenty.js"></script>
 
-	<script>
-		$(window).load(function() {
-			$("#demo1").twentytwenty();
-		});
-
-	</script>
-
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="../css/twentytwenty.css">
+	<link rel="stylesheet" href="../css/hw6.css">
 
 	<title>testing jquery plugin</title>
-
 </head>
 
 <body>
-	<div id="wrapper">
-		<header>
-			<h2>jQuery Plugin Example</h2>
-		</header>
+	<div id="page-wrapper">
+		<nav class="pushy pushy-left">
+			<div class="pushy-content">
+				<ul>
+					<li class="pushy-submenu">
+						<!-- assign1 : home submenu  -->
+						<button>Profile</button>
+						<ul>
+							<li class="pushy-link"><a href="#bio">Bio</a></li>
+							<li class="pushy-link"><a href="#skill">Skill Level</a></li>
+							<li class="pushy-link"><a href="#1850work">Comp 1850 Work</a></li>
+							<li class="pushy-link"><a href="#tools">Tools I Like</a></li>
+							<li class="pushy-link"><a href="#fav">Fav Sites</a></li>
+						</ul>
+					</li>
+					<li class="pushy-submenu">
+						<!-- assign: 2 europe submenu -->
+						<button>Went to Europe</button>
+						<ul>
+							<li class="pushy-link"><a href="europe.html#summary">About My Europe Vacation</a></li>
+							<li class="pushy-link"><a href="europe.html#france">Paris, France</a></li>
+							<li class="pushy-link"><a href="europe.html#italy">Rome, Italy</a></li>
+							<li class="pushy-link"><a href="europe.html#spain">Barcelona, Spain</a></li>
+						</ul>
+					</li>
+					<li class="pushy-submenu">
+						<!-- assign 3: different style sheet -->
+						<button>Style Change</button>
+						<ul>
+							<li class="pushy-link"><a href="index2.html">New Homepage</a></li>
+						</ul>
+					</li>
+					<li class="pushy-submenu">
+						<!-- assign 4: different style sheet -->
+						<button>CSS Layouts</button>
+						<ul>
+							<li class="pushy-link"><a href="hw3/page1.html">Layout 1</a></li>
+							<li class="pushy-link"><a href="hw3/page2.html">Layout 2</a></li>
+							<li class="pushy-link"><a href="hw3/page3.html">Layout 3</a></li>
+						</ul>
+					</li>
+					<li class="pushy-submenu">
+						<!-- assign 5: responsive webpage -->
+						<button>Responsive Design</button>
+						<ul>
+							<li class="pushy-link"><a href="hw5/responsive.html">Responsive Webpage Design</a></li>
+						</ul>
+					</li>
+					<li class="pushy-submenu">
+						<!-- assign 6: using jquery plugins -->
+						<button>Plugin Use</button>
+						<ul>
+							<li class="pushy-link"><a href="hw6/hw6.html">jQuery plugins</a></li>
+						</ul>
+					</li>
+					<li class="pushy=link"><a href="http://validator.w3.org/check?uri=referer">Referer Link</a></li>
+				</ul>
+			</div>
+		</nav>
 
-		<div id="demo1" class="twentytwenty-container">
-			<img src="../img/gw276-before.png">
-			<img src="../img/gw276-after.png">
+
+
+		<!-- site overlay -->
+		<div class="site-overlay"></div>
+
+		<!-- content body -->
+		<div id="container">
+			<button class="menu-btn">&#9776; Menu</button>
+			<header>
+				<h2>jQuery Plugin Examples</h2>
+			</header>
+			<main>
+				<section>
+					<h2>TwentyTwenty plugin</h2>
+					<h3>What is the TwentyTwenty plugin?</h3>
+					<p>If you've taken those eye exams that optometrists the TwentyTwenty plugin reminds you of when the doctor flips a switch to blur/unblur what you're looking at. If that doesn't quite make sense I believe the <a href="http://zurb.com/playground/twentytwenty">TwentyTwenty website</a> says it's like a tool you can use to play spot the difference between before-and-after images.</p>
+
+					<ul>
+						<li><a href="http://zurb.com/playground/twentytwenty">TwentyTwenty homepage</a></li>
+					</ul>
+
+					<div id="container1" class="twentytwenty-container">
+						<img src="../img/gw276-before.png">
+						<img src="../img/gw276-after.png">
+					</div>
+				</section>
+
+
+			</main>
 		</div>
-
 	</div>
-</body>
 
+	<!-- material-scrolltop button -->
+	<button class="material-scrolltop" type="button"></button>
+
+	<script src="../js/pushy.min.js"></script>
+	<script src="../js/material-scrolltop.js"></script>
+
+	<script>
+		$('body').materialScrollTop();
+		$(window).on("load", function() {
+			console.log("window loaded properly");
+			$("#container1").twentytwenty();
+		});
+	</script>
+</body>
 </html>
