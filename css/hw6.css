@@ -23,10 +23,27 @@ header {
 	border-bottom: 1em solid #ddd;
 }
 
+.booklet {
+	color: black;
+}
+
+.emp {
+	font-family: monospace;
+	color: darkred;
+	font-weight: bold;
+	font-size: 125%;
+}
+
+.important {
+	background-color: whitesmoke;
+	color: black;
+	padding: 2em;
+}
+
 .menu-btn {
 	width: 10em;
 	padding: 0.50em;
-	background-color: #272625;
+	background-color: #e5452c;
 	color: #faf3e6;
 	font-size: 125%;
 	letter-spacing: 0.05em;
@@ -40,7 +57,8 @@ header {
 #page-wrapper {
 	width: 80%;
 	margin: 0 auto;
-	background-color: whitesmoke;
+	background-color: #262626;
+	color: whitesmoke;
 	padding: 2em;
 }
 

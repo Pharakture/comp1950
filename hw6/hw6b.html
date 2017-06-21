@@ -5,14 +5,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/jquery.event.move.js"></script>
-	<script src="../js/jquery.twentytwenty.js"></script>
-
-	<link rel="stylesheet" href="../css/twentytwenty.css">
+	<link rel="stylesheet" href="../css/jquery.booklet.latest.css">
 	<link rel="stylesheet" href="../css/hw6.css">
 
-	<title>using TwentyTwenty plugin</title>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery-ui-1.10.4.min.js"></script>
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<script src="../js/jquery.booklet.latest.min.js"></script>
+
+	<title>using Booklet plugin</title>
 </head>
 
 <body>
@@ -68,7 +69,7 @@
 						<!-- assign 6: using jquery plugins -->
 						<button>Plugin Use</button>
 						<ul>
-							<li class="pushy-link"><a href="hw6/hw6.html">TwentyTwenty</a></li>
+							<li class="pushy-link"><a href="hw6.html">TwentyTwenty</a></li>
 							<li class="pushy-link"><a href="hw6b.html">Booklet</a></li>
 						</ul>
 					</li>
@@ -77,8 +78,6 @@
 			</div>
 		</nav>
 
-
-
 		<!-- site overlay -->
 		<div class="site-overlay"></div>
 
@@ -86,24 +85,47 @@
 		<div id="container">
 			<button class="menu-btn">&#9776; Menu</button>
 			<header>
-				<h2>jQuery Plugin Examples</h2>
+				<h2>jQuery Booklet example</h2>
 			</header>
 			<main>
 				<section>
-					<h2>TwentyTwenty plugin</h2>
-					<h3>What is the TwentyTwenty plugin?</h3>
-					<p>If you've taken those eye exams that optometrists the TwentyTwenty plugin reminds you of when the doctor flips a switch to blur/unblur what you're looking at. If that doesn't quite make sense I believe the <a href="http://zurb.com/playground/twentytwenty">TwentyTwenty website</a> says it's like a tool you can use to play spot the difference between before-and-after images.</p>
-
-					<p>The TwentyTwenty homepage contains a download for the plugin and the instructions on how to install the plugin.</p>
-					<ul>
-						<li><a href="http://zurb.com/playground/twentytwenty">TwentyTwenty homepage</a></li>
-					</ul>
-
-					<p class="important"><span class="emp">Note:</span> I didn't notice the requirements asked to manipulate the plugin so to make sure I covered the requirements for the assignment I made a <a href="hw6b.html">Homework 6 part B</a> using another plugin</p>
-				
-					<div id="container1" class="twentytwenty-container">
-						<img src="../img/gw276-before.png">
-						<img src="../img/gw276-after.png">
+					<h2>Booklet plugin</h2>
+					<div id="mybook" class="booklet">
+						<div class=".b-page-cover">
+							<h3>Welcome to My Booklet</h3>
+							<p>Hover over the edge of this page you can click to "flip" the page or click-hold on the edge of the new page to "turn" it yourself.</p>
+						</div>
+						<!-- page 1-->
+						<div>
+							<h3>What is the Booklet plugin?</h3>
+							<p>I think the plugin is self-explanatory. It's a little plugin that you can use on your website to create a booklet a user can flip through in their webpage.</p>							
+						</div>
+						<!-- page 2-->
+						<div>
+							<h3>How to install Booklet plugin</h3>
+							<p>This is a link to <a href="http://builtbywill.com/booklet/#/installation">Booklet's installation manual.</a></p>
+							<p>The installation is easy to follow and I had it up and running in a few minutes. I also used this <a href="http://builtbywill.com/booklet/#/documentation">style guide</a> when I turned on the option to have a closed book.</p>
+						</div>
+						<!-- page 3-->
+						<div>
+							<h3>How to customize the Booklet plugin</h3>
+							<p>Here's a link to <a href="http://builtbywill.com/booklet/#/documentation">Booklet's documentation page.</a> This has a bunch of options on how to customize your booklet. To name a few options you can: the size of the booklet, speed of the page flip, and what the starting page could be.</p>
+							
+							<p>You can click on the option methods to see instructions on how to use it as a selector or what method you need to call to able to turn on your options.</p>
+							
+							<p>What I options used:</p>
+							<ul>
+								<li>height: 500</li>
+								<li>width: 700</li>
+								<li>speed: 500</li>
+								<li>closed: true</li>
+								<li>closedFrontTitle: Start</li>
+								<li>pagePadding: 20 -- so you can see the edge better</li>
+							</ul>
+						</div>
+						<div class=".b-wrap">
+							<h3>The End!</h3>
+						</div>
 					</div>
 				</section>
 			</main>
@@ -117,10 +139,17 @@
 	<script src="../js/material-scrolltop.js"></script>
 
 	<script>
+		// scroll top button
 		$('body').materialScrollTop();
-		$(window).on("load", function() {
-			console.log("window loaded properly");
-			$("#container1").twentytwenty();
+
+		//booklet plugin
+		$("#mybook").booklet({
+			closedFrontTitle: "Start",
+			height: 500,
+			width: 700,
+			speed: 500,
+			closed: true,
+			pagePadding: 20
 		});
 	</script>
 </body>
